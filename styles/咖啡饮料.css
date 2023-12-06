@@ -1,0 +1,507 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --密封棕色: #582f0e;
+  --赤褐色: #7f4f24;
+  --生琥珀色: #936639;
+  --狮子: #a68a64;
+  --卡其: #b6ad90;
+  --鼠尾草: #c2c5aa;
+  --绿色: #656d4a;
+  --乌木: #414833;
+  --黑橄榄: #333d29;
+}
+body {
+  background-image: linear-gradient(
+    15deg,
+    var(--密封棕色) 15%,
+    var(--赤褐色) 85%
+  );
+}
+
+.导航栏 {
+  width: 100%;
+  height: 50px;
+  /* background-color: var(--密封棕色); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.导航栏-左 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 200px; /* background-color: aqua; */
+}
+
+.Logo图 {
+  height: 75%;
+  aspect-ratio: 1;
+  /* background-color: rebeccapurple; */
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.标题文字 {
+  height: 50%;
+  width: 120px;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Shrikhand", serif; /* background-color: rebeccapurple; */
+}
+
+.导航栏-右 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 750px; /* background-color: aqua; */
+}
+
+.超链接 {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  /* background-color: blueviolet; */
+}
+
+.超链接 li {
+  list-style: none;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.超链接 li a {
+  color: white;
+  text-decoration: none;
+}
+
+.滑块 {
+  width: 100px;
+  height: 40px;
+  background-color: var(--密封棕色);
+  border-radius: 4px;
+  position: absolute;
+  left: 488px;
+  bottom: 0;
+  z-index: -1;
+  transition: all ease 0.6s;
+  animation: 5s ease-in-out waves infinite;
+}
+li:nth-child(1):hover ~ .滑块 {
+  left: 10px;
+}
+li:nth-child(2):hover ~ .滑块 {
+  left: 128px;
+}
+li:nth-child(3):hover ~ .滑块 {
+  left: 248px;
+}
+li:nth-child(4):hover ~ .滑块 {
+  left: 368px;
+}
+li:nth-child(5):hover ~ .滑块 {
+  left: 488px;
+}
+li:nth-child(6):hover ~ .滑块 {
+  left: 616px;
+}
+
+@keyframes waves {
+  from {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 4%,
+      6% 9%,
+      13% 13%,
+      23% 15%,
+      31% 16%,
+      42% 15%,
+      49% 13%,
+      61% 10%,
+      71% 5%,
+      81% 3%,
+      90% 2%,
+      100% 5%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  to {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.咖啡饮料容器组1 {
+  /* margin-top: 200px; */
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--鼠尾草); */
+}
+
+.咖啡 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  gap: 250px;
+  /* background-color: blue; */
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.土耳其咖啡 {
+  position: relative;
+  /* background-color: red; */
+}
+
+.土耳其咖啡:hover .btn {
+  display: block;
+}
+
+.土耳其咖啡:hover img {
+  opacity: 0.8;
+}
+
+.维也纳咖啡 {
+  position: relative;
+  /* background-color: red; */
+}
+
+.维也纳咖啡:hover .btn {
+  display: block;
+}
+
+.维也纳咖啡:hover img {
+  opacity: 0.8;
+}
+
+.越南咖啡 {
+  position: relative;
+  /* background-color: red; */
+}
+
+.越南咖啡:hover .btn {
+  display: block;
+}
+
+.越南咖啡:hover img {
+  opacity: 0.8;
+}
+
+.咖啡图片 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  z-index: 3;
+  left: 50%;
+  /* background-color: var(--乌木); */
+}
+
+.咖啡饮料容器组2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--黑橄榄); */
+}
+
+.黑咖啡 {
+  position: relative;
+  /* background-color: rebeccapurple; */
+}
+
+.黑咖啡:hover .btn {
+  display: block;
+}
+
+.黑咖啡:hover img {
+  opacity: 0.8;
+}
+
+.印度滴漏咖啡 {
+  position: relative;
+  /* background-color: rebeccapurple; */
+}
+
+.印度滴漏咖啡:hover .btn {
+  display: block;
+}
+
+.印度滴漏咖啡:hover img {
+  opacity: 0.8;
+}
+
+.长黑咖啡 {
+  position: relative;
+  /* background-color: rebeccapurple; */
+}
+
+.长黑咖啡:hover .btn {
+  display: block;
+}
+
+.长黑咖啡:hover img {
+  opacity: 0.8;
+}
+
+.咖啡饮料容器组3 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--鼠尾草); */
+}
+
+.希腊法拉佩咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.希腊法拉佩咖啡:hover .btn {
+  display: block;
+}
+
+.希腊法拉佩咖啡:hover img {
+  opacity: 0.8;
+}
+
+.浓缩咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.浓缩咖啡:hover .btn {
+  display: block;
+}
+
+.浓缩咖啡:hover img {
+  opacity: 0.8;
+}
+
+.拿铁咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.拿铁咖啡:hover .btn {
+  display: block;
+}
+
+.拿铁咖啡:hover img {
+  opacity: 0.8;
+}
+
+.咖啡饮料容器组4 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--黑橄榄); */
+}
+
+.阿芙佳朵 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.阿芙佳朵:hover .btn {
+  display: block;
+}
+
+.阿芙佳朵:hover img {
+  opacity: 0.8;
+}
+
+.爱尔兰咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.爱尔兰咖啡:hover .btn {
+  display: block;
+}
+
+.爱尔兰咖啡:hover img {
+  opacity: 0.8;
+}
+
+.白咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.白咖啡:hover .btn {
+  display: block;
+}
+
+.白咖啡:hover img {
+  opacity: 0.8;
+}
+
+.咖啡饮料容器组5 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--鼠尾草); */
+}
+
+.调味咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.调味咖啡:hover .btn {
+  display: block;
+}
+
+.调味咖啡:hover img {
+  opacity: 0.8;
+}
+
+.卡布奇诺 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.卡布奇诺:hover .btn {
+  display: block;
+}
+
+.卡布奇诺:hover img {
+  opacity: 0.8;
+}
+
+.康宝蓝咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.康宝蓝咖啡:hover .btn {
+  display: block;
+}
+
+.康宝蓝咖啡:hover img {
+  opacity: 0.8;
+}
+
+.咖啡饮料容器组6 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--绿色); */
+}
+
+.玛琪雅朵咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.玛琪雅朵咖啡:hover .btn {
+  display: block;
+}
+
+.玛琪雅朵咖啡:hover img {
+  opacity: 0.8;
+}
+
+.美式咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.美式咖啡:hover .btn {
+  display: block;
+}
+
+.美式咖啡:hover img {
+  opacity: 0.8;
+}
+
+.摩卡咖啡 {
+  position: relative;
+  /* background-color: var(--乌木); */
+}
+
+.摩卡咖啡:hover .btn {
+  display: block;
+}
+
+.摩卡咖啡:hover img {
+  opacity: 0.8;
+}

@@ -1,0 +1,437 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --密封棕色: #582f0e;
+  --赤褐色: #7f4f24;
+  --生琥珀色: #936639;
+  --狮子: #a68a64;
+  --卡其: #b6ad90;
+  --鼠尾草: #c2c5aa;
+  --绿色: #656d4a;
+  --乌木: #414833;
+  --黑橄榄: #333d29;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    15deg,
+    var(--密封棕色) 15%,
+    var(--赤褐色) 85%
+  );
+}
+
+.导航栏 {
+  width: 100%;
+  height: 50px;
+  /* background-color: var(--密封棕色); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.导航栏-左 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 200px;
+  /* background-color: aqua; */
+}
+
+.Logo图 {
+  height: 75%;
+  aspect-ratio: 1;
+  /* background-color: rebeccapurple; */
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.标题文字 {
+  height: 50%;
+  width: 120px;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Shrikhand', serif;
+  /* background-color: rebeccapurple; */
+}
+
+.导航栏-右 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 500px;
+  /* background-color: aqua; */
+}
+
+.超链接 {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  /* background-color: blueviolet; */
+}
+
+.超链接 li {
+  list-style: none;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.超链接 li a {
+  color: white;
+  text-decoration: none;
+}
+
+.滑块 {
+  width: 100px;
+  height: 40px;
+  background-color: var(--密封棕色);
+  border-radius: 4px;
+  position: absolute;
+  left: 128px;
+  bottom: 0;
+  z-index: -1;
+  transition: all ease 0.6s;
+  animation: 5s ease-in-out waves infinite;
+}
+li:nth-child(1):hover ~ .滑块 {
+  left: 10px;
+}
+li:nth-child(2):hover ~ .滑块 {
+  left: 128px;
+}
+li:nth-child(3):hover ~ .滑块 {
+  left: 248px;
+}
+li:nth-child(4):hover ~ .滑块 {
+  left: 368px;
+}
+
+@keyframes waves {
+  from {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 4%,
+      6% 9%,
+      13% 13%,
+      23% 15%,
+      31% 16%,
+      42% 15%,
+      49% 13%,
+      61% 10%,
+      71% 5%,
+      81% 3%,
+      90% 2%,
+      100% 5%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  to {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.标题 {
+  /* writing-mode:vertical-lr; */
+  color: white;
+  letter-spacing: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Passion One", sans-serif;
+  background-color: gold;
+}
+
+.页面 {
+  height: 300vh;
+  width: 100%;
+  background-color: #1e1d21;
+}
+
+.磨制容器 {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: aquamarine;
+}
+
+.磨制图 {
+  height: 600px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rebeccapurple;
+}
+
+.磨制 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 80%;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  background-color: hotpink;
+}
+
+.日晒法容器 {
+  /* display: table-cell; */
+  height: 800px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: forestgreen;
+}
+
+.日晒图 {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: darkorange;
+}
+
+.日晒法 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  background-color: hotpink;
+}
+
+.容器2 {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: salmon; */
+}
+
+.蜜处理法容器 {
+  height: 800px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: seagreen; */
+}
+
+.蜜处理图 {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.蜜处理 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
+
+.半日晒法容器 {
+  height: 800px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: firebrick; */
+}
+
+.半日晒图 {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+}
+
+.半日晒法 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
+
+.容器3 {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: salmon; */
+}
+
+.半水洗图容器 {
+  height: 800px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.半水洗图 {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+}
+
+.半水洗法 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
+
+.厌氧发酵容器 {
+  height: 800px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.厌氧发酵图 {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
+}
+
+.厌氧发酵 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
