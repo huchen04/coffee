@@ -179,10 +179,11 @@ li:nth-child(4):hover ~ .滑块 {
 }
 
 .标题 {
-  /* writing-mode:vertical-lr; */
+  height: 100px;
+  width: 300px;
   color: white;
-  letter-spacing: 5px;
-  font-size: 30px;
+  letter-spacing: 10px;
+  font-size: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,91 +192,21 @@ li:nth-child(4):hover ~ .滑块 {
   font-family: "Dancing Script", cursive;
   font-family: "Lato", sans-serif;
   font-family: "Passion One", sans-serif;
-  background-color: gold;
+  /* background-color: gold; */
 }
 
 .页面 {
-  height: 300vh;
+  height: 460vh;
   width: 100%;
   background-color: #1e1d21;
 }
 
-.磨制容器 {
-  height: 900px;
+.空 {
+  height: 30px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 30px;
-  background-color: aquamarine;
 }
 
-.磨制图 {
-  height: 600px;
-  width: 80%;
-  border-radius: 5px;
-  background-color: rebeccapurple;
-}
-
-.磨制 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 80%;
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: #fff;
-  line-height: 45px;
-  font-family: "Abril Fatface", serif;
-  font-family: "Archivo Black", sans-serif;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans SC", sans-serif;
-  font-family: "Passion One", sans-serif;
-  background-color: hotpink;
-}
-
-.日晒法容器 {
-  /* display: table-cell; */
-  height: 800px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-  background-color: forestgreen;
-}
-
-.日晒图 {
-  height: 400px;
-  width: 600px;
-  border-radius: 5px;
-  background-color: darkorange;
-}
-
-.日晒法 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  width: 600px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: #fff;
-  line-height: 45px;
-  font-family: "Abril Fatface", serif;
-  font-family: "Archivo Black", sans-serif;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans SC", sans-serif;
-  font-family: "Passion One", sans-serif;
-  background-color: hotpink;
-}
-
-.容器2 {
+.容器1 {
   height: 900px;
   width: 100%;
   display: flex;
@@ -284,30 +215,29 @@ li:nth-child(4):hover ~ .滑块 {
   /* background-color: salmon; */
 }
 
-.蜜处理法容器 {
-  height: 800px;
-  width: 50%;
+.磨制容器{
+  height: 900px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
-  /* background-color: seagreen; */
+  gap: 30px;
+  /* background-color: aquamarine; */
 }
 
-.蜜处理图 {
-  height: 400px;
-  width: 600px;
-  border-radius: 5px;
-  /* background-color: saddlebrown; */
+.磨制图{
+  height: 700px;
+  width: 90%;
+  border-radius: 15px;
 }
 
-.蜜处理 {
+.磨制{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  width: 600px;
+  width: 90%;
   font-size: 20px;
   letter-spacing: 5px;
   color: #fff;
@@ -321,29 +251,114 @@ li:nth-child(4):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.半日晒法容器 {
+.容器2{
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: salmon; */
+}
+
+.研磨容器{
   height: 800px;
-  width: 50%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 50px;
-  /* background-color: firebrick; */
+  /* background-color: seagreen; */
 }
 
-.半日晒图 {
+.研磨图{
   height: 400px;
-  width: 600px;
+  width: 400px;
   border-radius: 5px;
+  /* background-color: saddlebrown; */
 }
 
-.半日晒法 {
+.研磨{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  width: 600px;
+  width: 400px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
+
+.打磨容器{
+  height: 800px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: rgb(46, 119, 139); */
+}
+
+.打磨图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.打磨{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
+  /* background-color: hotpink; */
+}
+
+.臼磨容器{
+  height: 800px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: seagreen; */
+}
+
+.臼磨图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.臼磨{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
   font-size: 20px;
   letter-spacing: 5px;
   color: #fff;
@@ -366,28 +381,29 @@ li:nth-child(4):hover ~ .滑块 {
   /* background-color: salmon; */
 }
 
-.半水洗图容器 {
-  height: 800px;
-  width: 50%;
+.萃取容器{
+  height: 900px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+  /* background-color: aquamarine; */
 }
 
-.半水洗图 {
-  height: 400px;
-  width: 600px;
-  border-radius: 5px;
+.萃取图{
+  height: 700px;
+  width: 90%;
+  border-radius: 15px;
 }
 
-.半水洗法 {
+.萃取{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  width: 600px;
+  width: 90%;
   font-size: 20px;
   letter-spacing: 5px;
   color: #fff;
@@ -401,37 +417,130 @@ li:nth-child(4):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.厌氧发酵容器 {
+.容器4{
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: salmon; */
+}
+
+.浸泡容器{
   height: 800px;
-  width: 50%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  /* background-color: seagreen; */
 }
 
-.厌氧发酵图 {
+.浸泡图{
   height: 400px;
-  width: 600px;
+  width: 400px;
   border-radius: 5px;
+  /* background-color: saddlebrown; */
 }
 
-.厌氧发酵 {
+.煎煮容器{
+  height: 800px;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: rgb(46, 119, 139); */
+}
+
+.煎煮图{
   height: 400px;
-  width: 600px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: #fff;
-  line-height: 45px;
-  font-family: "Abril Fatface", serif;
-  font-family: "Archivo Black", sans-serif;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans SC", sans-serif;
-  font-family: "Passion One", sans-serif;
-  /* background-color: hotpink; */
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.循环容器{
+  height: 600px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: seagreen; */
+}
+
+.循环图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.容器5{
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: salmon; */
+}
+
+.滴滤容器{
+  height: 800px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: seagreen; */
+}
+
+.滴滤图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.虹吸容器{
+  height: 800px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: rgb(46, 119, 139); */
+}
+
+.虹吸图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
+}
+
+.压力容器{
+  height: 800px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: seagreen; */
+}
+
+.压力图{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  /* background-color: saddlebrown; */
 }
