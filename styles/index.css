@@ -261,7 +261,7 @@ li:nth-child(6):hover ~ .滑块 {
   background-color: #fff5;
 }
 
-.主页面文本{
+.主页面文本 {
   height: 170px;
   display: flex;
   flex-direction: column;
@@ -284,7 +284,42 @@ li:nth-child(6):hover ~ .滑块 {
   color: #fff;
   font-size: 25px;
   letter-spacing: 5px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   /* font-family: "DM Serif Text", serif; */
   /* background-color: var(--绿色); */
+}
+
+.页脚 {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(32, 31, 31);
+}
+
+.页脚容器 {
+  /* margin-top: 200px; */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--鼠尾草); */
+}
+
+.页脚列表 {
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  padding: 60px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
 }
