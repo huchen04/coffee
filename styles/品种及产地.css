@@ -64,7 +64,7 @@ body {
   width: 120px;
   font-size: 20px;
   color: #fff;
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
   /* background-color: rebeccapurple; */
 }
 
@@ -196,7 +196,6 @@ li:nth-child(6):hover ~ .滑块 {
   position: absolute;
   object-fit: cover;
   filter: brightness(50%);
-
 }
 
 .标签 {
@@ -241,7 +240,7 @@ li:nth-child(6):hover ~ .滑块 {
 }
 
 .页面2 {
-  height: 370vh;
+  height: 390vh;
   width: 100%;
   /* display: flex;
   justify-content: center;
@@ -265,8 +264,8 @@ li:nth-child(6):hover ~ .滑块 {
   border-radius: 5px;
 }
 
-.fa-solid fa-heart{
-   color:#fff;
+.fa-solid fa-heart {
+  color: #fff;
 }
 
 .拉丁美洲产地1 {
@@ -285,11 +284,11 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.拉丁美洲产地1 li{
- list-style: none;
+.拉丁美洲产地1 li {
+  list-style: none;
 }
 
-.拉丁美洲产地2{
+.拉丁美洲产地2 {
   height: 400px;
   width: 200px;
   font-size: 20px;
@@ -305,9 +304,9 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.拉丁美洲产地2 li{
+.拉丁美洲产地2 li {
   list-style: none;
- }
+}
 
 .非洲产地1 {
   height: 400px;
@@ -325,11 +324,11 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.非洲产地1 li{
+.非洲产地1 li {
   list-style: none;
- }
+}
 
-.非洲产地2{
+.非洲产地2 {
   height: 400px;
   width: 200px;
   font-size: 20px;
@@ -345,9 +344,9 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.非洲产地2 li{
+.非洲产地2 li {
   list-style: none;
- }
+}
 
 .产地图1 {
   height: 500px;
@@ -359,17 +358,17 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: skyblue; */
 }
 
-.南亚图{
+.南亚图 {
   height: 400px;
   width: 400px;
 }
 
-.中东图{
+.中东图 {
   height: 400px;
   width: 400px;
 }
 
-.中东和南亚产地{
+.中东和南亚产地 {
   height: 400px;
   width: 200px;
   font-size: 20px;
@@ -386,21 +385,21 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.中东和南亚产地 li{
+.中东和南亚产地 li {
   list-style: none;
- }
+}
 
- .东亚图{
+.东亚图 {
   height: 400px;
   width: 400px;
 }
 
-.太平洋图{
+.太平洋图 {
   height: 400px;
   width: 400px;
 }
 
-.东亚和太平洋诸岛产地{
+.东亚和太平洋诸岛产地 {
   height: 400px;
   width: 200px;
   font-size: 20px;
@@ -419,9 +418,9 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
-.东亚和太平洋诸岛产地 li{
+.东亚和太平洋诸岛产地 li {
   list-style: none;
- }
+}
 
 .品种容器 {
   height: 650px;
@@ -433,11 +432,11 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: seagreen; */
 }
 
-.品种标题容器{
+.品种标题容器 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width: 100%;
   height: 100px;
   color: white;
   letter-spacing: 25px;
@@ -474,5 +473,44 @@ li:nth-child(6):hover ~ .滑块 {
   height: 400px;
   width: 400px;
   object-fit: contain;
+}
 
+.页面3 {
+  width: 100%;
+  height: 300px;
+}
+
+.页脚 {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(32, 31, 31);
+}
+
+.页脚容器 {
+  /* margin-top: 200px; */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: var(--鼠尾草); */
+}
+
+.页脚列表 {
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: #fff;
+  line-height: 45px;
+  padding: 60px;
+  font-family: "Abril Fatface", serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Passion One", sans-serif;
 }
