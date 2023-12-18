@@ -64,7 +64,7 @@ body {
   width: 120px;
   font-size: 20px;
   color: #fff;
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
   /* background-color: rebeccapurple; */
 }
 
@@ -109,7 +109,7 @@ body {
   animation: 5s ease-in-out waves infinite;
 }
 li:nth-child(1):hover ~ .滑块 {
-  left: 488px;
+  left: 10px;
 }
 li:nth-child(2):hover ~ .滑块 {
   left: 128px;
@@ -188,6 +188,7 @@ li:nth-child(6):hover ~ .滑块 {
   width: 100%;
   height: 100vh;
   background-color: rebeccapurple;
+  position: relative;
 }
 
 .背景1 {
@@ -239,8 +240,8 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: teal; */
 }
 
-.标题{
-  writing-mode:vertical-lr;
+.标题 {
+  writing-mode: vertical-lr;
   color: white;
   letter-spacing: 5px;
   font-size: 30px;
@@ -258,13 +259,16 @@ li:nth-child(6):hover ~ .滑块 {
   background-color: #1e1d21;
 }
 
-.加工图容器 {
-  height: 650px;
-  width: 100%;
+.图容器 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
+}
+
+.加工图容器 {
+  height: 650px;
+  width: 100%;
 }
 
 .加工图 {
@@ -295,10 +299,6 @@ li:nth-child(6):hover ~ .滑块 {
 .烘培图容器 {
   height: 650px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
   /* background-color: seagreen; */
 }
 
@@ -327,13 +327,17 @@ li:nth-child(6):hover ~ .滑块 {
   /* background-color: hotpink; */
 }
 
+.图容器 > a {
+  transition: 200ms;
+}
+
+.图容器 > a:hover {
+  filter: brightness(50%);
+}
+
 .冲煮图容器 {
   height: 650px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
   /* background-color: seagreen; */
 }
 
@@ -395,4 +399,59 @@ li:nth-child(6):hover ~ .滑块 {
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans SC", sans-serif;
   font-family: "Passion One", sans-serif;
+}
+
+@media screen and (width<=1200px) {
+  .页面1 {
+    height: 500px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .标签 {
+    position: relative;
+    width: 90%;
+    top: unset;
+    left: unset;
+    margin: 0 auto;
+    height: fit-content;
+  }
+
+  .页面2 {
+    height: auto;
+  }
+
+  .图容器 {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .标题 {
+    writing-mode: horizontal-tb;
+  }
+
+  .咖啡加工,
+  .咖啡烘焙,
+  .咖啡冲煮 {
+    height: fit-content;
+    padding: 20px 0;
+  }
+
+  .页脚 {
+    height: fit-content;
+  }
+
+  .页脚容器 {
+    height: 100%;
+  }
+
+  .页脚列表 {
+    width: 45%;
+    height: 90%;
+    padding: 10px;
+  }
 }
