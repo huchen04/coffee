@@ -506,6 +506,14 @@ li:nth-child(6):hover ~ .滑块 {
   opacity: 0.8;
 }
 
+.咖啡饮料图片 > a{
+  transition: 200ms;
+}
+
+.咖啡饮料图片 > a:hover{
+  filter: brightness(50%);
+}
+
 .页脚 {
   width: 100%;
   height: 300px;
