@@ -186,8 +186,7 @@ li:nth-child(6):hover ~ .滑块 {
 
 .健康影响容器 {
   width: 100%;
-  height: 95%;
-  position: absolute;
+  height: 100vh;
   object-fit: cover;
   /* background-color: darkcyan; */
 }
@@ -195,26 +194,28 @@ li:nth-child(6):hover ~ .滑块 {
 .健康影响图 {
   width: 100%;
   height: 100%;
-  position: absolute;
   object-fit: cover;
   filter: brightness(55%);
 }
 
 .健康影响 {
   height: 500px;
-  width: 50%;
+  width: 500px;
   /* top: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-size: 25px;
-  background-color: wheat;
+  text-indent:2em;
+  font-size: 23px;
+  /* background-color: wheat; */
   color: #fff;
-  letter-spacing: 5px;
-  font-weight: bold;
-  text-align: center;
+  letter-spacing: 10px;
+  top: 500px;
+  left: 50px;
+  /* font-weight: bold; */
+  /* text-align: center; */
   font-family: "Abril Fatface", serif;
   font-family: "Archivo Black", sans-serif;
   font-family: "Dancing Script", cursive;
