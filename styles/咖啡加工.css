@@ -448,35 +448,106 @@ li:nth-child(4):hover ~ .滑块 {
 
 .页脚 {
   width: 100%;
-  height: 300px;
-  background-color: rgb(32, 31, 31);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.页脚容器 {
-  /* margin-top: 200px; */
-  width: 100%;
-  height: 300px;
+.页脚信息 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  /* background-color: var(--鼠尾草); */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15vw;
+}
+
+.链接信息 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 3vw;
+}
+
+.页脚链接区 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.页脚标题 {
+  font-size: 0.975rem;
+  padding: 0 0 0 10px;
+  color: gray;
 }
 
 .页脚列表 {
-  justify-content: center;
-  align-items: center;
-  height: 300px;
+  height: 75%;
   width: 100%;
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: #fff;
-  line-height: 45px;
-  padding: 60px;
-  font-family: "Abril Fatface", serif;
-  font-family: "Archivo Black", sans-serif;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.页脚项 {
+  font-size: 1rem;
+  padding: 0 0 0 10px;
+  width: 150px;
+  height: 35px;
+}
+
+.页脚项 > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.页脚项:hover::marker {
+  content: "\27A1";
+  color: gold;
+}
+
+.作者联系区 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.作者联系区 > h4 {
+  color: gray;
+  font-weight: normal;
+  font-size: 0.975rem;
+}
+
+.作者联系方式 {
+  height: 30px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 25px;
+  background-color: #1a1a1a;
+  border-radius: 7.5px;
+  padding: 25px 15px;
   font-family: "Noto Sans SC", sans-serif;
-  font-family: "Passion One", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.作者联系方式:hover {
+  background-color: rgb(57, 81, 117);
+}
+
+.作者联系方式 > img {
+  height: 25px;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
